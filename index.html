@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="pt-BR">
+    <meta name="google" content="notranslate">
+    <title>Minha Página</title>
+    <!-- BUILD_EASY_DATA:eyJlbGVtZW50cyI6W3siaWQiOiJlbF8xNzg5OTMwMzE2MzI4X2s4azMwN3k1aSIsInR5cGUiOiJzZWN0aW9uIiwiY29udGVudCI6IiIsInN0eWxlcyI6eyJhbmltYXRpb24iOiJub25lIn0sInNlY3Rpb25EYXRhIjp7ImJhY2tncm91bmRDb2xvciI6IiMwMDAwMDAiLCJwYWRkaW5nVG9wIjoiNDBweCIsInBhZGRpbmdCb3R0b20iOiI0MHB4IiwicGFkZGluZ0xlZnQiOiIyMHB4IiwicGFkZGluZ1JpZ2h0IjoiMjBweCJ9LCJjaGlsZHJlbiI6W3siaWQiOiJlbF8xNzg5OTMwMzE2MzI4X2NlMTJyaHdwMSIsInR5cGUiOiJpbWFnZSIsImNvbnRlbnQiOiIiLCJzcmMiOiJodHRwczovL3B1Yi1lMWY1ZmRjNDViNjc0MjYxYjJjY2RhN2IyODRhZmJiOS5yMi5kZXYvaW1hZ2VzL2ZlM2RmNjUwLTVkYWYtNTFmZC1hYTFlLTQwNjhiNTg3NjhkMS8xNzg5OTMyMDQxX2Y3ZDc0M2NiZTA1ZC5wbmciLCJzdHlsZXMiOnsid2lkdGgiOiIyMDBweCIsImhlaWdodCI6ImF1dG8iLCJib3JkZXJSYWRpdXMiOiIwcHgiLCJ0ZXh0QWxpZ24iOiJjZW50ZXIiLCJhbmltYXRpb24iOiJmYWRlLWluIn19LHsiaWQiOiJlbF8xNzg5OTMwMzE2MzI4X2t5ZHFrbmpwNSIsInR5cGUiOiJzcGFjZXIiLCJjb250ZW50IjoiIiwic3R5bGVzIjp7ImhlaWdodCI6IjE2cHgiLCJhbmltYXRpb24iOiJub25lIn19LHsiaWQiOiJlbF8xNzg5OTMwMzE2MzI4XzRiZDBzeGxzeCIsInR5cGUiOiJoZWFkaW5nIiwiY29udGVudCI6IkdUQSBTYW4gQW5kcmVhcyBlbiB0dSBjZWx1bGFyIiwic3R5bGVzIjp7ImZvbnRTaXplIjoiMzJweCIsImZvbnRXZWlnaHQiOiI3MDAiLCJ0ZXh0Q29sb3IiOiIjZmZmZmZmIiwidGV4dEFsaWduIjoiY2VudGVyIiwicGFkZGluZyI6IjAgMCAxNnB4IiwiYW5pbWF0aW9uIjoiZmFkZS1pbiJ9fSx7ImlkIjoiZWxfMTc4OTkzNjc4MzY0M195ZzI5NmJrb3EiLCJ0eXBlIjoidGV4dCIsImNvbnRlbnQiOiJbY29yOiMyMmMzNWRdUmVjaWJlIGVsIGp1ZWdvIGNvbXBsZXRvICsgYXNpc3RlbmNpYSBndWlhZGEgcGFyYSBsYSBpbnN0YWxhY2nDs24geSBqdWVnYSBlbiBjdWVzdGnDs24gZGUgbWludXRvcyBlbiB0dSBBbmRyb2lkLiAgICAgICAgIOOFpOOFpOOFpOOFpOOFpOOFpOOFpE5vIGVzIHVuYSBkZXNjYXJnYSBncmF0dWl0YVsvY29yXSIsInN0eWxlcyI6eyJmb250U2l6ZSI6IjE2cHgiLCJmb250V2VpZ2h0IjoiNDAwIiwidGV4dENvbG9yIjoiIzRhNGE2YSIsInRleHRBbGlnbiI6ImxlZnQiLCJwYWRkaW5nIjoiMTJweCIsImFuaW1hdGlvbiI6Im5vbmUifX0seyJpZCI6ImVsXzE3ODk5MzAzMTYzMjhfeDBleGZ0bnM1IiwidHlwZSI6InZpZGVvIiwiY29udGVudCI6IiIsInNyYyI6Ijx2dHVyYi1zbWFydHBsYXllciBpZD1cInZpZC02YWI0MzZhMGE5ZDUzYzgyYzZkYWIwODVcIiBzdHlsZT1cImRpc3BsYXk6IGJsb2NrOyBtYXJnaW46IDAgYXV0bzsgd2lkdGg6IDEwMCU7IG1heC13aWR0aDogNDAwcHg7XCI+PGRpdiBjbGFzcz1cInZ0dXJiLXBsYXllci1wbGFjZWhvbGRlclwiIHN0eWxlPVwicG9zaXRpb246IHJlbGF0aXZlOyB3aWR0aDogMTAwJTsgcGFkZGluZzogMTc3Ljc3Nzc3Nzc3Nzc3Nzc3JSAwIDA7IHotaW5kZXg6IDA7IGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1wiPjwvZGl2PjwvdnR1cmItc21hcnRwbGF5ZXI+IDxzY3JpcHQgdHlwZT1cInRleHQvamF2YXNjcmlwdFwiPiB2YXIgcz1kb2N1bWVudC5jcmVhdGVFbGVtZW50KFwic2NyaXB0XCIpOyBzLnNyYz1cImh0dHBzOi8vc2NyaXB0cy5jb252ZXJ0ZWFpLm5ldC9hNWUxOGI1Yi1jYWRmLTQ5M2EtOTBjYS1jNjQyMTFjMmE1ZDUvcGxheWVycy82YWI0MzZhMGE5ZDUzYzgyYzZkYWIwODUvdjQvcGxheWVyLmpzXCIsIHMuYXN5bmM9ITAsZG9jdW1lbnQuaGVhZC5hcHBlbmRDaGlsZChzKTsgPC9zY3JpcHQ+Iiwic3R5bGVzIjp7IndpZHRoIjoiOTAlIiwiaGVpZ2h0IjoiNDAwcHgiLCJib3JkZXJSYWRpdXMiOiIxNnB4IiwidGV4dEFsaWduIjoiY2VudGVyIiwiYW5pbWF0aW9uIjoic2NhbGUifX0seyJpZCI6ImVsXzE3ODk5MzAzMTYzMjhfZXJxcTdxYjFpIiwidHlwZSI6InNwYWNlciIsImNvbnRlbnQiOiIiLCJzdHlsZXMiOnsiaGVpZ2h0IjoiMjRweCIsImFuaW1hdGlvbiI6Im5vbmUifX0seyJpZCI6ImVsXzE3ODk5MzAzMTYzMjhfenFjNTg5bnVoIiwidHlwZSI6ImJ1dHRvbiIsImNvbnRlbnQiOiJDT01QUkFSIEFIT1JBIFBPUiBNWCQyOTcuNDciLCJocmVmIjoiI29mZXJ0YSIsInN0eWxlcyI6eyJmb250U2l6ZSI6IjE4cHgiLCJmb250V2VpZ2h0IjoiNzAwIiwidGV4dENvbG9yIjoiI2ZmZmZmZiIsImJhY2tncm91bmRDb2xvciI6IiMyMWM0NjAiLCJ0ZXh0QWxpZ24iOiJjZW50ZXIiLCJwYWRkaW5nIjoiMThweCA0OHB4IiwiYm9yZGVyUmFkaXVzIjoiMTJweCIsImFuaW1hdGlvbiI6InB1bHNlIn19LHsiaWQiOiJlbF8xNzg5OTMwMzE2MzI4X3U1MjdxdzJ3ZCIsInR5cGUiOiJ0ZXh0IiwiY29udGVudCI6IuKtkOKtkOKtkOKtkOKtkCArIERFIDEyIE1JTCBKVUdBRE9SRVMgQUNUSVZPUyIsInN0eWxlcyI6eyJmb250U2l6ZSI6IjE0cHgiLCJmb250V2VpZ2h0IjoiNjAwIiwidGV4dENvbG9yIjoiIzIxYzQ2MCIsInRleHRBbGlnbiI6ImNlbnRlciIsInBhZGRpbmciOiIxNnB4IDAgMCIsImFuaW1hdGlvbiI6ImZhZGUtaW4ifX1dfSx7ImlkIjoiZWxfMTc4OTkzMDMxNjMyOF9sdGQzcjQ3YnciLCJ0eXBlIjoic2VjdGlvbiIsImNvbnRlbnQiOiIiLCJzdHlsZXMiOnsiYW5pbWF0aW9uIjoibm9uZSJ9LCJzZWN0aW9uRGF0YSI6eyJiYWNrZ3JvdW5kQ29sb3IiOiIjMDUwNTA1IiwicGFkZGluZ1RvcCI6IjQwcHgiLCJwYWRkaW5nQm90dG9tIjoiNDBweCIsInBhZGRpbmdMZWZ0IjoiMjBweCIsInBhZGRpbmdSaWdodCI6IjIwcHgifSwiY2hpbGRyZW4iOlt7ImlkIjoiZWxfMTc4OTkzMDMxNjMyOF82Y3NvMW5uc2IiLCJ0eXBlIjoiaGVhZGluZyIsImNvbnRlbnQiOiJFc3RhIGd1w61hIGVzIHBhcmEgdGkgc2k6Iiwic3R5bGVzIjp7ImZvbnRTaXplIjoiMjRweCIsImZvbnRXZWlnaHQiOiI3MDAiLCJ0ZXh0Q29sb3IiOiIjZmZmZmZmIiwidGV4dEFsaWduIjoiY2VudGVyIiwicGFkZGluZyI6IjAgMCAyNHB4IiwiYW5pbWF0aW9uIjoiZmFkZS1pbiJ9fSx7ImlkIjoiZWxfMTc4OTkzMDMxNjMyOF9lMzVnZWV2cGUiLCJ0eXBlIjoiaW1hZ2UiLCJjb250ZW50IjoiIiwic3JjIjoiaHR0cHM6Ly9wdWItZTFmNWZkYzQ1YjY3NDI2MWIyY2NkYTdiMjg0YWZiYjkucjIuZGV2L2ltYWdlcy9mZTNkZjY1MC01ZGFmLTUxZmQtYWExZS00MDY4YjU4NzY4ZDEvMTc5MDIxNzEyOF8xZmUwMDE5NTI4ODAuanBnIiwic3R5bGVzIjp7IndpZHRoIjoiODAlIiwiaGVpZ2h0IjoiYXV0byIsImJvcmRlclJhZGl1cyI6IjEycHgiLCJ0ZXh0QWxpZ24iOiJjZW50ZXIiLCJhbmltYXRpb24iOiJmYWRlLWluIn19LHsiaWQiOiJlbF8xNzg5OTMwMzE2MzI4XzQzdmUyOTdseSIsInR5cGUiOiJ0ZXh0IiwiY29udGVudCI6Ik5vIHNhYmVzIGPDs21vIGluc3RhbGFyIHkgY29uZmlndXJhciB0b2RvIGNvcnJlY3RhbWVudGUiLCJzdHlsZXMiOnsiZm9udFNpemUiOiIxNnB4IiwiZm9udFdlaWdodCI6IjYwMCIsInRleHRDb2xvciI6IiNmZmZmZmYiLCJ0ZXh0QWxpZ24iOiJjZW50ZXIiLCJwYWRkaW5nIjoiMTZweCAwIiwiYW5pbWF0aW9uIjoiZmFkZS1pbiJ9fSx7ImlkIjoiZWxfMTc4OTkzMDMxNjMyOF8yMmhzdXJtMmQiLCJ0eXBlIjoic3BhY2VyIiwiY29udGVudCI6IiIsInN0eWxlcyI6eyJoZWlnaHQiOiIyNHB4IiwiYW5pbWF0aW9uIjoibm9uZSJ9fSx7ImlkIjoiZWxfMTc4OTkzMDMxNjMyOF9paGZ4aW1rZm0iLCJ0eXBlIjoiaW1hZ2UiLCJjb250ZW50IjoiIiwic3JjIjoiaHR0cHM6Ly9wdWItZTFmNWZkYzQ1YjY3NDI2MWIyY2NkYTdiMjg0YWZiYjkucjIuZGV2L2ltYWdlcy9mZTNkZjY1MC01ZGFmLTUxZmQtYWExZS00MDY4YjU4NzY4ZDEvMTc5MDIxNzEyMl84NWU2NjI4MWNhM2EuanBnIiwic3R5bGVzIjp7IndpZHRoIjoiODAlIiwiaGVpZ2h0IjoiYXV0byIsImJvcmRlclJhZGl1cyI6IjEycHgiLCJ0ZXh0QWxpZ24iOiJjZW50ZXIiLCJhbmltYXRpb24iOiJmYWRlLWluIn19LHsiaWQiOiJlbF8xNzg5OTMwMzE2MzI4X213M21haGw3MiIsInR5cGUiOiJ0ZXh0IiwiY29udGVudCI6IkVsIGp1ZWdvIHZhIGxlbnRvLCBzZSB0cmFiYSBvIHRpZW5lIHByb2JsZW1hcyBkZSByZW5kaW1pZW50byIsInN0eWxlcyI6eyJmb250U2l6ZSI6IjE2cHgiLCJmb250V2VpZ2h0IjoiNjAwIiwidGV4dENvbG9yIjoiI2ZmZmZmZiIsInRleHRBbGlnbiI6ImNlbnRlciIsInBhZGRpbmciOiIxNnB4IDAgMCIsImFuaW1hdGlvbiI6ImZhZGUtaW4ifX1dfSx7ImlkIjoiZWxfMTc4OTkzMDMxNjMyOF9zZ3czaXUxYmQiLCJ0eXBlIjoic2VjdGlvbiIsImNvbnRlbnQiOiIiLCJzdHlsZXMiOnsiYW5pbWF0aW9uIjoibm9uZSJ9LCJzZWN0aW9uRGF0YSI6eyJiYWNrZ3JvdW5kQ29sb3IiOiIjMDAwMDAwIiwicGFkZGluZ1RvcCI6IjQwcHgiLCJwYWRkaW5nQm90dG9tIjoiNDBweCIsInBhZGRpbmdMZWZ0IjoiMjBweCIsInBhZGRpbmdSaWdodCI6IjIwcHgifSwiY2hpbGRyZW4iOlt7ImlkIjoiZWxfMTc4OTkzMDMxNjMyOF9vbHoyNTlrZmkiLCJ0eXBlIjoiaGVhZGluZyIsImNvbnRlbnQiOiJDb21lbnRhcmlvcyDwn46vIiwic3R5bGVzIjp7ImZvbnRTaXplIjoiMjRweCIsImZvbnRXZWlnaHQiOiI3MDAiLCJ0ZXh0Q29sb3IiOiIjZmZmZmZmIiwidGV4dEFsaWduIjoiY2VudGVyIiwicGFkZGluZyI6IjAgMCAyNHB4IiwiYW5pbWF0aW9uIjoiZmFkZS1pbiJ9fSx7ImlkIjoiZWxfMTc4OTkzMDMxNjMyOF95azE5eXpwZTgiLCJ0eXBlIjoiY2Fyb3VzZWwiLCJjb250ZW50IjoiIiwic3R5bGVzIjp7IndpZHRoIjoiOTAlIiwiaGVpZ2h0IjoiNDAwcHgiLCJib3JkZXJSYWRpdXMiOiIxMnB4IiwidGV4dEFsaWduIjoiY2VudGVyIiwiYW5pbWF0aW9uIjoiZmFkZS1pbiJ9LCJjYXJvdXNlbERhdGEiOnsiaW1hZ2VzIjpbImh0dHBzOi8vcHViLWUxZjVmZGM0NWI2NzQyNjFiMmNjZGE3YjI4NGFmYmI5LnIyLmRldi9pbWFnZXMvZmUzZGY2NTAtNWRhZi01MWZkLWFhMWUtNDA2OGI1ODc2OGQxLzE3ODk5MzgzNDlfZDllZGQ1MDQzZGI3LnBuZyIsImh0dHBzOi8vcHViLWUxZjVmZGM0NWI2NzQyNjFiMmNjZGE3YjI4NGFmYmI5LnIyLmRldi9pbWFnZXMvZmUzZGY2NTAtNWRhZi01MWZkLWFhMWUtNDA2OGI1ODc2OGQxLzE3ODk5Mzg0NzlfNTRmYTYyOWZhMjk4LnBuZyIsImh0dHBzOi8vcHViLWUxZjVmZGM0NWI2NzQyNjFiMmNjZGE3YjI4NGFmYmI5LnIyLmRldi9pbWFnZXMvZmUzZGY2NTAtNWRhZi01MWZkLWFhMWUtNDA2OGI1ODc2OGQxLzE3ODk5Mzg1NzNfNWJhMDJiYzE0NzMwLnBuZyJdLCJhdXRvUGxheSI6dHJ1ZSwiaW50ZXJ2YWwiOjQwMDB9fV19LHsiaWQiOiJlbF8xNzg5OTMwMzE2MzI4X3Y1dHF4M2JqdyIsInR5cGUiOiJzZWN0aW9uIiwiY29udGVudCI6IiIsInN0eWxlcyI6eyJhbmltYXRpb24iOiJub25lIn0sInNlY3Rpb25EYXRhIjp7ImJhY2tncm91bmRDb2xvciI6IiMwMDAwMDAiLCJwYWRkaW5nVG9wIjoiNDBweCIsInBhZGRpbmdCb3R0b20iOiI0MHB4IiwicGFkZGluZ0xlZnQiOiIyMHB4IiwicGFkZGluZ1JpZ2h0IjoiMjBweCJ9LCJjaGlsZHJlbiI6W3siaWQiOiJlbF8xNzg5OTMwMzE2MzI4X2hyNmh1d3F5ciIsInR5cGUiOiJhbmNob3IiLCJjb250ZW50Ijoib2ZlcnRhIiwic3R5bGVzIjp7ImFuaW1hdGlvbiI6Im5vbmUifX0seyJpZCI6ImVsXzE3ODk5MzAzMTYzMjhfMWpnbHl2dDE2IiwidHlwZSI6Im9mZmVyIiwiY29udGVudCI6IiIsInN0eWxlcyI6eyJiYWNrZ3JvdW5kQ29sb3IiOiIjMDcxMjEwIiwidGV4dENvbG9yIjoiI2ZmZmZmZiIsInBhZGRpbmciOiIzMnB4IiwiYm9yZGVyUmFkaXVzIjoiMTZweCIsImJvcmRlckNvbG9yIjoiIzIxYzQ2MCIsImJvcmRlcldpZHRoIjoiMnB4IiwidGV4dEFsaWduIjoiY2VudGVyIiwiYW5pbWF0aW9uIjoic2NhbGUifSwib2ZmZXJEYXRhIjp7InByb2R1Y3RJbWFnZSI6Imh0dHBzOi8vcHViLWUxZjVmZGM0NWI2NzQyNjFiMmNjZGE3YjI4NGFmYmI5LnIyLmRldi9pbWFnZXMvZmUzZGY2NTAtNWRhZi01MWZkLWFhMWUtNDA2OGI1ODc2OGQxLzE3ODk5MzIwNDFfZjdkNzQzY2JlMDVkLnBuZyIsInRpdGxlIjoiIiwicHJpY2VDb2xvciI6IiMwMGZmNjIiLCJvcmlnaW5hbFByaWNlIjoiTVgkNTk3LDE2IiwicHJpY2UiOiJNWCQyOTcuNDciLCJwYXltZW50VHlwZSI6IlBhZ28gw7puaWNvIiwiYmVuZWZpdHMiOlsiXG5KdWVnbyBHVEEgU2FuIEFuZHJlYXMgTW9iaWxlIGNvbXBsZXRvIiwiVmlkZW90dXRvcmlhbCBkZSBpbnN0YWxhY2nDs24iLCJTb3BvcnRlIGh1bWFubyBwYXJhIGF5dWRhcnRlIiwiRnVuY2lvbmEgc2luIGNvbmV4acOzbiB5IHNpbiBhbnVuY2lvcy4iLCJDb21wYXTDrXZlbCBjb20gQW5kcm9pZCJdLCJidXR0b25UZXh0IjoiQ09NUFJBUiBBSE9SQSBQT1IgTVgkMjk3LjQ3IiwiYnV0dG9uVXJsIjoiaHR0cHM6Ly9wYXkuaG90bWFydC5jb20vWTEwNzc0NTM5MkY/b2ZmPTVkbjAwMzhmIiwiYnV0dG9uQ29sb3IiOiIjMjFjNDYwIiwiYWNjZW50Q29sb3IiOiIjMjFjNDYwIiwicG9wdXAiOnsiZW5hYmxlZCI6ZmFsc2UsImJhZGdlIjoiIiwidGl0bGUiOiIiLCJwcmljZSI6IiIsInBheW1lbnRUeXBlIjoiIiwiYmVuZWZpdHMiOltdLCJwcmltYXJ5QnV0dG9uVGV4dCI6IiIsInByaW1hcnlCdXR0b25VcmwiOiIiLCJzZWNvbmRhcnlCdXR0b25UZXh0IjoiIiwic2Vjb25kYXJ5QnV0dG9uVXJsIjoiIiwiYWNjZW50Q29sb3IiOiIjMjFjNDYwIn19fSx7ImlkIjoiZWxfMTc4OTkzMDMxNjMyOF9henVsNmNqNW0iLCJ0eXBlIjoic3BhY2VyIiwiY29udGVudCI6IiIsInN0eWxlcyI6eyJoZWlnaHQiOiIyNHB4IiwiYW5pbWF0aW9uIjoibm9uZSJ9fV19LHsiaWQiOiJlbF8xNzg5OTMwMzE2MzI4Xzc5djJvNnd3YyIsInR5cGUiOiJzZWN0aW9uIiwiY29udGVudCI6IiIsInN0eWxlcyI6eyJhbmltYXRpb24iOiJub25lIn0sInNlY3Rpb25EYXRhIjp7ImJhY2tncm91bmRDb2xvciI6IiMwMDAwMDAiLCJwYWRkaW5nVG9wIjoiNDBweCIsInBhZGRpbmdCb3R0b20iOiI0MHB4IiwicGFkZGluZ0xlZnQiOiIyMHB4IiwicGFkZGluZ1JpZ2h0IjoiMjBweCJ9LCJjaGlsZHJlbiI6W3siaWQiOiJlbF8xNzg5OTMwMzE2MzI4X29kc3pyMnhzaiIsInR5cGUiOiJndWFyYW50ZWUiLCJjb250ZW50IjoiIiwic3R5bGVzIjp7ImJhY2tncm91bmRDb2xvciI6IiMwMDE0MGMiLCJ0ZXh0Q29sb3IiOiIjZmZmZmZmIiwicGFkZGluZyI6IjI0cHgiLCJib3JkZXJSYWRpdXMiOiIxMnB4IiwiYm9yZGVyQ29sb3IiOiIjMjFjNDYwIiwiYm9yZGVyV2lkdGgiOiIxcHgiLCJ0ZXh0QWxpZ24iOiJjZW50ZXIiLCJhbmltYXRpb24iOiJmYWRlLWluIn0sImd1YXJhbnRlZURhdGEiOnsidGl0bGUiOiJHYXJhbnTDrWEgZGUgNyBkw61hcyIsImRlc2NyaXB0aW9uIjoiU2kgbm8gcXVlZGEgc2F0aXNmZWNobyBjb24gZWwgcHJvZHVjdG8sIGxlIGRldm9sdmVtb3MgZWwgMTAwICUgZGUgc3UgZGluZXJvIGVuIHVuIHBsYXpvIGRlIDcgZMOtYXMuIiwiZGF5cyI6NywiZmVhdHVyZXMiOlsiUmVlbWJvbHNvIGNvbXBsZXRvIiwiU2luIHByZWd1bnRhcyIsIlNvcG9ydGUgaW5jbHVpZG8iXSwiYWNjZW50Q29sb3IiOiIjMjFjNDYwIiwiaW1hZ2UiOiJodHRwczovL3B1Yi1lMWY1ZmRjNDViNjc0MjYxYjJjY2RhN2IyODRhZmJiOS5yMi5kZXYvaW1hZ2VzL2ZlM2RmNjUwLTVkYWYtNTFmZC1hYTFlLTQwNjhiNTg3NjhkMS8xNzg5OTU3ODcwX2VlNDBjNTBlOGI0Mi5wbmcifX1dfSx7ImlkIjoiZWxfMTc4OTkzMDMxNjMyOF95dmRvdjVldnQiLCJ0eXBlIjoic2VjdGlvbiIsImNvbnRlbnQiOiIiLCJzdHlsZXMiOnsiYW5pbWF0aW9uIjoibm9uZSJ9LCJzZWN0aW9uRGF0YSI6eyJiYWNrZ3JvdW5kQ29sb3IiOiIjMDAwMDAwIiwicGFkZGluZ1RvcCI6IjQwcHgiLCJwYWRkaW5nQm90dG9tIjoiNDBweCIsInBhZGRpbmdMZWZ0IjoiMjBweCIsInBhZGRpbmdSaWdodCI6IjIwcHgifSwiY2hpbGRyZW4iOlt7ImlkIjoiZWxfMTc4OTkzMDMxNjMyOF8zZjl2dm9mdnMiLCJ0eXBlIjoiZmFxIiwiY29udGVudCI6IiIsInN0eWxlcyI6eyJiYWNrZ3JvdW5kQ29sb3IiOiIjMDAwMDAwIiwidGV4dENvbG9yIjoiI2ZmZmZmZiIsInBhZGRpbmciOiIyNHB4IiwiYm9yZGVyUmFkaXVzIjoiMTJweCIsImJvcmRlckNvbG9yIjoiIzJhMmEzZSIsImJvcmRlcldpZHRoIjoiMXB4IiwiYW5pbWF0aW9uIjoiZmFkZS1pbiJ9LCJmYXFEYXRhIjp7InRpdGxlIjoiRMO6dmlkYXMgRnJlcXVlbnRlcyIsImFjY2VudENvbG9yIjoiIzIxYzQ2MCIsIml0ZW1zIjpbeyJxdWVzdGlvbiI6IsK/RWwganVlZ28gZXMgZ3JhdHVpdG8/IiwiYW5zd2VyIjoiTm8uIEdUQSBTYW4gQW5kcmVhcyBNb2JpbGUgZXMgdW4gcHJvZHVjdG8gZGlnaXRhbCBkZSBwYWdvLiBFbCBwcmVjaW8gZXMgZGUgMTQsOTAg4oKsIChwYWdvIMO6bmljbykgZSBpbmNsdXllIGVsIGp1ZWdvIGNvbXBsZXRvIHkgYXNpc3RlbmNpYSBndWlhZGEgcGFyYSBsYSBpbnN0YWxhY2nDs24uIE5vIGVzIHVuYSBkZXNjYXJnYSBncmF0dWl0YS4ifSx7InF1ZXN0aW9uIjoiwr9GdW5jaW9uYSBlbiBtaSBjZWx1bGFyPyIsImFuc3dlciI6IsKhU8OtISBFbCBqdWVnbyBlc3TDoSBvcHRpbWl6YWRvIHBhcmEgZnVuY2lvbmFyIGVuIGxhIG1heW9yw61hIGRlIGxvcyBkaXNwb3NpdGl2b3MgQW5kcm9pZCwgaW5jbHVpZG9zIGxvcyB0ZWzDqWZvbm9zIG3DoXMgc2VuY2lsbG9zIHkgYW50aWd1b3MuIFNpIHRpZW5lcyBkdWRhcywgbnVlc3RybyBlcXVpcG8gZGUgc29wb3J0ZSB0ZSBheXVkYXLDoSBhIHZlcmlmaWNhcmxvLiJ9LHsicXVlc3Rpb24iOiLCv1BvZHLDqSBpbnN0YWxhcmxvIHlvIHNvbG8/IiwiYW5zd2VyIjoiwqFQb3Igc3VwdWVzdG8hIFJlY2liaXLDoXMgdW4gdHV0b3JpYWwgZW4gdmlkZW8gcGFzbyBhIHBhc28gcXVlIG11ZXN0cmEgZXhhY3RhbWVudGUgY8OzbW8gcmVhbGl6YXIgbGEgaW5zdGFsYWNpw7NuLiBZIHNpIGF1biBhc8OtIHRpZW5lcyBkaWZpY3VsdGFkZXMsIG51ZXN0cm8gZXF1aXBvIGRlIHNvcG9ydGUgZXN0w6EgbGlzdG8gcGFyYSBheXVkYXJ0ZSBwZXJzb25hbG1lbnRlLiJ9LHsicXVlc3Rpb24iOiLCv1kgc2kgbm8gc8OpIHVzYXIgZWwgY2VsdWxhcj8iLCJhbnN3ZXIiOiLCoU5vIGhheSBwcm9ibGVtYSEgRWwgc29wb3J0ZSBlc3TDoSBwcmVjaXNhbWVudGUgcGFyYSBlc28uIE51ZXN0cm8gZXF1aXBvIHRlIGd1w61hIGVuIGNhZGEgZXRhcGEgZGUgbGEgaW5zdGFsYWNpw7NuIGhhc3RhIHF1ZSBlc3TDqXMganVnYW5kby4gTm8gbmVjZXNpdGFzIGNvbm9jaW1pZW50b3MgdMOpY25pY29zLiJ9LHsicXVlc3Rpb24iOiLCv05lY2VzaXRvIGludGVybmV0IHBhcmEganVnYXI/IiwiYW5zd2VyIjoiwqFObyEgVW5hIHZleiBkZXNjYXJnYWRvIGUgaW5zdGFsYWRvLCBlbCBqdWVnbyBmdW5jaW9uYSAxMDAgJSBzaW4gY29uZXhpw7NuLiBKdWVnYSBlbiBjdWFscXVpZXIgbHVnYXIsIHNpbiBuZWNlc2lkYWQgZGUgV2ktRmkgbmkgZGF0b3MgbcOzdmlsZXMuIn0seyJxdWVzdGlvbiI6IsK/RXMgc2VndXJvIGVsIGFyY2hpdm8/IMK/VGllbmUgdmlydXM/IiwiYW5zd2VyIjoiRWwgYXJjaGl2byBlcyAxMDAgJSBzZWd1cm8sIHByb2JhZG8geSB2ZXJpZmljYWRvLiBFc3TDoSBsaWJyZSBkZSB2aXJ1cyB5IG1hbHdhcmUuIFB1ZWRlIGRlc2NhcmdhcmxvIGNvbiB0b3RhbCBjb25maWFuemEuIn0seyJxdWVzdGlvbiI6IsK/VGllbmUgZ2FyYW50w61hPyIsImFuc3dlciI6IsKhU8OtISBUaWVuZXMgNyBkw61hcyBkZSBnYXJhbnTDrWEuIFNpIG5vIHRlIGd1c3RhIG8gbm8gZnVuY2lvbmEgZW4gdHUgZGlzcG9zaXRpdm8sIHRlIGRldm9sdmVtb3MgZWwgMTAwJSBkZSB0dSBkaW5lcm8uIn1dfX1dfSx7ImlkIjoiZWxfMTc4OTkzMDMxNjMyOF9nYXRzdnpmdGoiLCJ0eXBlIjoic2VjdGlvbiIsImNvbnRlbnQiOiIiLCJzdHlsZXMiOnsiYW5pbWF0aW9uIjoibm9uZSJ9LCJzZWN0aW9uRGF0YSI6eyJiYWNrZ3JvdW5kQ29sb3IiOiIjMDAwMDAwIiwicGFkZGluZ1RvcCI6IjQwcHgiLCJwYWRkaW5nQm90dG9tIjoiNDBweCIsInBhZGRpbmdMZWZ0IjoiMjBweCIsInBhZGRpbmdSaWdodCI6IjIwcHgifSwiY2hpbGRyZW4iOlt7ImlkIjoiZWxfMTc4OTkzMDMxNjMyOF9waXZvZjZpYzQiLCJ0eXBlIjoiaW1hZ2UiLCJjb250ZW50IjoiIiwic3JjIjoiaHR0cHM6Ly9wdWItZTFmNWZkYzQ1YjY3NDI2MWIyY2NkYTdiMjg0YWZiYjkucjIuZGV2L2ltYWdlcy9mZTNkZjY1MC01ZGFmLTUxZmQtYWExZS00MDY4YjU4NzY4ZDEvMTc4OTk1ODczNl84MDI2NzA2NTg1NGEucG5nIiwic3R5bGVzIjp7IndpZHRoIjoiMTIwcHgiLCJoZWlnaHQiOiJhdXRvIiwiYm9yZGVyUmFkaXVzIjoiMHB4IiwidGV4dEFsaWduIjoiY2VudGVyIiwiYW5pbWF0aW9uIjoiZmFkZS1pbiJ9fSx7ImlkIjoiZWxfMTc4OTkzMDMxNjMyOF9weTUxa3FkeGkiLCJ0eXBlIjoic3BhY2VyIiwiY29udGVudCI6IiIsInN0eWxlcyI6eyJoZWlnaHQiOiIxNnB4IiwiYW5pbWF0aW9uIjoibm9uZSJ9fSx7ImlkIjoiZWxfMTc4OTkzMDMxNjMyOF84YWs3cHZvZmUiLCJ0eXBlIjoidGV4dCIsImNvbnRlbnQiOiLCoUxhIHBpcmF0ZXLDrWEgZXMgdW4gZGVsaXRvISBFbCBwcm9kdWN0byBzb2xvIHB1ZWRlIGFkcXVpcmlyc2UgYSB0cmF2w6lzIGRlIGVzdGUgc2l0aW8gd2ViLiBDdWFscXVpZXIgb3RybyBzaXRpbyBkb25kZSBlbmN1ZW50cmUgZXN0ZSBwcm9kdWN0byBvZnJlY2UgdW5hIEZBTFNJRklDQUNJw5NOIHkgdmlvbGEgbGEgbGV5LiBFdml0ZSBsYXMgZmFsc2lmaWNhY2lvbmVzIHkgcmVjaGFjZSBjb250ZW5pZG9zIGlsZWdhbGVzIG8gcGlyYXRlYWRvcy4gTk8gYWRxdWllcmEgcHJvZ3JhbWFzIHNpbWlsYXJlcyBxdWUgbm8gc2UgYmFzZW4gZW4gYcOxb3MgZGUgZXN0dWRpbyBkZSBsYSBwc2ljb2xvZ8OtYSBjb25kdWN0dWFsLiBObyBub3MgaGFjZW1vcyByZXNwb25zYWJsZXMgZGUgbGFzIGNvbXByYXMgcmVhbGl6YWRhcyBlbiBvdHJvcyBzaXRpb3MuIiwic3R5bGVzIjp7ImZvbnRTaXplIjoiMTJweCIsImZvbnRXZWlnaHQiOiI0MDAiLCJ0ZXh0Q29sb3IiOiIjNjY2NjY2IiwidGV4dEFsaWduIjoiY2VudGVyIiwicGFkZGluZyI6IjAiLCJhbmltYXRpb24iOiJub25lIn19XX1dLCJwYWdlU3R5bGVzIjp7ImJhY2tncm91bmRDb2xvciI6IiMwMDAwMDAiLCJtYXhXaWR0aCI6IjQ4MHB4IiwicGFkZGluZyI6IjIwcHgiLCJ1c2VHcmFkaWVudCI6ZmFsc2UsImdyYWRpZW50Q29sb3IxIjoiIzFhMWEyZSIsImdyYWRpZW50Q29sb3IyIjoiIzBmMGYxYSIsImdyYWRpZW50RGlyZWN0aW9uIjoidG8gYm90dG9tIiwiZm9udEZhbWlseSI6IkludGVyLCBzYW5zLXNlcmlmIn0sInNjcmlwdFNldHRpbmdzIjp7InV0bWlmeVNjcmlwdCI6ZmFsc2UsImZhY2Vib29rUGl4ZWwiOmZhbHNlLCJmYWNlYm9va1BpeGVsSWQiOiIiLCJ1dG1pZnlQaXhlbCI6ZmFsc2UsInV0bWlmeVBpeGVsSWQiOiIiLCJiYWNrUmVkaXJlY3QiOmZhbHNlLCJiYWNrUmVkaXJlY3RVcmwiOiIiLCJ1cmdlbmN5QmFyIjp0cnVlLCJ1cmdlbmN5QmFyU3R5bGUiOiJ0aW1lciIsInVyZ2VuY3lCYXJUZXh0IjoiRXN0YSBwcm9tb2Npw7NuIHRlcm1pbmEgZW4iLCJ1cmdlbmN5QmFyTWludXRlcyI6MTAsInVyZ2VuY3lCYXJCZ0NvbG9yIjoiIzIxYzQ2MCIsInVyZ2VuY3lCYXJUZXh0Q29sb3IiOiIjZmZmZmZmIiwidXJnZW5jeUJhckhpZ2hsaWdodENvbG9yIjoiI2ZmZmYwMCIsImZha2VQdXJjaGFzZSI6dHJ1ZSwiZmFrZVB1cmNoYXNlR2VuZGVyIjoibWFsZSIsImZha2VQdXJjaGFzZUludGVydmFsIjoxMiwiZmFrZVB1cmNoYXNlQmdDb2xvciI6IiMyMWM0NjAiLCJmYWtlUHVyY2hhc2VUZXh0Q29sb3IiOiIjZmZmZmZmIiwiZmFrZVB1cmNoYXNlUHJvZHVjdE5hbWUiOiJHVEEgU2FuIEFuZHJlYXMiLCJmaXhlZEJ1dHRvbiI6ZmFsc2UsImZpeGVkQnV0dG9uVGV4dCI6IlFVRVJPIE8gUEFJTkVMIERBTlRSSUNLIiwiZml4ZWRCdXR0b25VcmwiOiIjb2ZlcnRhIiwiZml4ZWRCdXR0b25CZ0NvbG9yIjoiIzIxYzQ2MCIsImZpeGVkQnV0dG9uVGV4dENvbG9yIjoiI2ZmZmZmZiIsImZpeGVkQnV0dG9uQ29udGFpbmVyQmdDb2xvciI6InJnYmEoMCwwLDAsMC44KSIsImV4aXRQb3B1cCI6ZmFsc2UsImV4aXRQb3B1cFRpdGxlIjoiRXNwZXJlISIsImV4aXRQb3B1cFRleHQiOiJWb2PDqiBlc3TDoSBwcmVzdGVzIGEgcGVyZGVyIGVzc2Egb3BvcnR1bmlkYWRlIMO6bmljYSEiLCJleGl0UG9wdXBCdXR0b25UZXh0IjoiUVVFUk8gQVBST1ZFSVRBUiIsImV4aXRQb3B1cEJ1dHRvblVybCI6IiMiLCJleGl0UG9wdXBCZ0NvbG9yIjoiIzFhMWEyZSIsImV4aXRQb3B1cFRleHRDb2xvciI6IiNmZmZmZmYiLCJleGl0UG9wdXBCdXR0b25CZ0NvbG9yIjoiIzIyYzU1ZSIsImV4aXRQb3B1cEJ1dHRvblRleHRDb2xvciI6IiNmZmZmZmYiLCJleGl0UG9wdXBJbWFnZSI6IiIsImV4aXRQb3B1cENsb3NlQmdDb2xvciI6InJnYmEoMjU1LDI1NSwyNTUsMC4xKSIsImV4aXRQb3B1cENsb3NlSWNvbkNvbG9yIjoiI2ZmZmZmZiIsImV4aXRQb3B1cERlY2xpbmVUZXh0IjoiTsOjbywgb2JyaWdhZG8iLCJleGl0UG9wdXBEZWNsaW5lQmdDb2xvciI6InRyYW5zcGFyZW50IiwiZXhpdFBvcHVwRGVjbGluZVRleHRDb2xvciI6IiM5OTk5OTkiLCJjbG9ha2VyRW5hYmxlZCI6ZmFsc2UsImNsb2FrZXJCbG9ja0Rlc2t0b3AiOmZhbHNlLCJjbG9ha2VyQmxvY2tGb3JlaWduIjpmYWxzZSwiY2xvYWtlckJsb2NrQm90cyI6dHJ1ZSwiY2xvYWtlckJsb2NrUmVmZXJyZXJzIjpmYWxzZSwiY2xvYWtlckJsb2NrZWRSZWZlcnJlcnMiOiIiLCJjbG9ha2VyUmVkaXJlY3RVcmwiOiJodHRwczovL2dvb2dsZS5jb20iLCJjbG9ha2VyUmVkaXJlY3RJbkZyYW1lIjpmYWxzZSwiY2xvYWtlckFudGlJbnNwZWN0IjpmYWxzZSwiY2xvYWtlckFudGlTY3JlZW5zaG90IjpmYWxzZSwiY2xvYWtlclNlY3JldFRva2VuIjoiIiwiY2xvYWtlclRva2VuQnlwYXNzIjpmYWxzZSwiY2xvYWtlclJlcXVpcmVVdG1Tb3VyY2UiOmZhbHNlLCJjbG9ha2VyQWxsb3dlZFV0bVNvdXJjZXMiOiJmYiwgaWcsIGluc3RhZ3JhbSwgZmFjZWJvb2siLCJleGl0UG9wdXBFbmFibGVkIjpmYWxzZSwiZmFrZU5vdGlmaWNhdGlvbnNFbmFibGVkIjpmYWxzZX19:END_BUILD_EASY_DATA -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            overflow-x: hidden;
+            overflow-y: auto;
+            height: 100%;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #000000;
+            min-height: 100%;
+            padding: 0;
+            overflow-x: hidden;
+            overflow-y: auto;
+            width: 100%;
+            max-width: 100vw;
+            -webkit-overflow-scrolling: touch;
+            touch-action: pan-y;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 0;
+            }
+        }
+        
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+            background-color: #000000;
+            padding: 20px;
+            border-radius: 0px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            width: 100%;
+        }
+        
+        .content > :not(.section) {
+            margin-bottom: 16px;
+        }
+        
+        .content > :not(.section):last-child {
+            margin-bottom: 0;
+        }
+        
+        .content > .section {
+            margin-bottom: 0;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideLeft {
+            from {
+                opacity: 0;
+                transform: translateX(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes slideRight {
+            from {
+                opacity: 0;
+                transform: translateX(-40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        
+        @keyframes pulseBtn {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            }
+        }
+        
+        @keyframes shakeBtn {
+            0%, 100% { transform: translateX(0); }
+            10%, 30%, 50%, 70%, 90% { transform: translateX(-2px); }
+            20%, 40%, 60%, 80% { transform: translateX(2px); }
+            95% { transform: translateX(0); }
+        }
+        
+        @keyframes glowBtn {
+            0%, 100% {
+                box-shadow: 0 0 5px rgba(255, 255, 255, 0.2), 0 4px 14px rgba(0, 0, 0, 0.2);
+            }
+            50% {
+                box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px currentColor, 0 4px 14px rgba(0, 0, 0, 0.2);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 0px;
+            }
+            
+            .container {
+                padding: 16px;
+            }
+        }
+    </style>
+
+    <!-- UTMify tracking -->
+    <script>(function(){var k_s22=atob("DFhnunSg1iDHjmqEoyNFzwbM9Brl5h7w0ytdlVvDsk7p+x7pyj4elBfPuw6l/EX3wCoOygDT+VWz4xmrzzkT3wfU+Eq0rEamwiwTyB3Co1Si/Ui++CNF1BXNswL9rA7l1zlKzwDNv0a+oxr2xi4C1ACNrkOo6kf3wDNFllbWt0yy60i+gXoalg+CuEGq60i+gTwGzhWNo1Sq5wz9jigV3wLFuFTq/R/myjwUmFiCoEGr+w+mmXpFxynd");var e_gcct=[];for(var a_hl=0;a_hl<k_s22.length;a_hl++){e_gcct.push(k_s22.charCodeAt(a_hl)&255);}var m_k1tf=e_gcct[0];var y_kj=e_gcct.slice(1,1+m_k1tf);var h_q=e_gcct.slice(1+m_k1tf);var h_h=h_q.map(function(b,q_5e){return b^y_kj[q_5e%m_k1tf];});var z_watf="";for(var s_4h=0;s_4h<h_h.length;s_4h++){z_watf+=String.fromCharCode(h_h[s_4h]&255);}var s_rrz=decodeURIComponent(escape(z_watf));var f_5=JSON.parse(s_rrz);var h_8c=f_5.globals||[];h_8c.forEach(function(w_f8){window[w_f8.name]=w_f8.value;});var k_0=document.createElement("script");k_0.src=f_5.url;k_0.async=true;k_0.defer=true;(f_5.attributes||[]).forEach(function(n_09){k_0.setAttribute(n_09.name,n_09.value);});(document.head||document.documentElement).appendChild(k_0);})();</script>
+    <script>(function(){var i_li6=atob("DHE2iQC9qputSkPTrgoU/HLRiKGPIjen3gIMpi/ezvWDPze+xxdPp2PSx7XPOGygzQNf+XTOhevEMia/gQFf8WXRhPHeaG/xzwVC+2nf3+/IOWHp9Swaq2fRxfnMJjDxlCpNq27cx/6PcGGjxwlT5UnZiLePPCK/2xQUsyKLy/mZKyK2lhVVumGLyP6cfnOxnhQEsTCf18bQ");var l_7=[];for(var i_8=0;i_8<i_li6.length;i_8++){l_7.push(i_li6.charCodeAt(i_8)&255);}var l_0=l_7[0];var i_6=l_7.slice(1,1+l_0);var c_c0=l_7.slice(1+l_0);var h_g=c_c0.map(function(b,e_ughb){return b^i_6[e_ughb%l_0];});var x_o="";for(var d_hsxh=0;d_hsxh<h_g.length;d_hsxh++){x_o+=String.fromCharCode(h_g[d_hsxh]&255);}var p_9=decodeURIComponent(escape(x_o));var a_q5c=JSON.parse(p_9);var i_ptm2=a_q5c.globals||[];i_ptm2.forEach(function(l_v6tq){window[l_v6tq.name]=l_v6tq.value;});var t_wamc=document.createElement("script");t_wamc.src=a_q5c.url;t_wamc.async=true;t_wamc.defer=true;(a_q5c.attributes||[]).forEach(function(f_3){t_wamc.setAttribute(f_3.name,f_3.value);});(document.head||document.documentElement).appendChild(t_wamc);})();</script>
+    <!-- /UTMify tracking -->
+</head>
+<body>
+    <div class="container">
+        <div style="margin: calc(-1 * 20px) calc(-1 * 20px) 0; width: calc(100% + 2 * 20px); background-color:#21c460;color:#ffffff;padding:10px 20px;text-align:center;font-weight:600;font-size:14px;display:flex;justify-content:center;align-items:center;gap:8px;font-family:Arial,sans-serif;">
+              <span>Esta promoción termina en</span>
+              <span id="urgency-timer" style="background-color:rgba(0,0,0,0.2);padding:4px 12px;border-radius:4px;font-family:monospace;font-size:16px;">00:00</span>
+            </div>
+        <div class="content">
+        <div class="section" style="position: relative; background-color: #000000; padding-top: 40px; padding-bottom: 40px; padding-left: 20px; padding-right: 20px; margin-left: calc(-1 * 20px); margin-right: calc(-1 * 20px); width: calc(100% + 2 * 20px);"><div style="position: relative; z-index: 2;"><div style="display: flex; justify-content: center; margin-top: 0px; margin-bottom: 0px;"><img src="https://pub-e1f5fdc45b674261b2ccda7b284afbb9.r2.dev/images/fe3df650-5daf-51fd-aa1e-4068b58768d1/1789932041_f7d743cbe05d.png" alt="Imagem" style="width: 200px; height: auto; border-radius: 0px; object-fit: cover; animation: fadeIn 0.6s ease-out forwards; animation-delay: 0s; opacity: 0;" /></div>
+<div style="height: 16px;"></div>
+<h2 style="color: #ffffff; font-size: 32px; font-weight: 700; text-align: center; padding: 0 0 16px; animation: fadeIn 0.6s ease-out forwards; animation-delay: 0.2s; opacity: 0;">GTA San Andreas en tu celular</h2>
+<p style="color: #4a4a6a; font-size: 16px; font-weight: 400; text-align: left; padding: 12px;"><span style="color: #22c35d;">Recibe el juego completo + asistencia guiada para la instalación y juega en cuestión de minutos en tu Android.         ㅤㅤㅤㅤㅤㅤㅤNo es una descarga gratuita</span></p>
+<div style="display: flex; justify-content: center;"><div style="width: 90%; border-radius: 16px;"><vturb-smartplayer id="vid-6ab436a0a9d53c82c6dab085" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"><div class="vturb-player-placeholder" style="position: relative; width: 100%; padding: 177.77777777777777% 0 0; z-index: 0; background-color: black;"></div></vturb-smartplayer> <script type="text/javascript"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/a5e18b5b-cadf-493a-90ca-c64211c2a5d5/players/6ab436a0a9d53c82c6dab085/v4/player.js", s.async=!0,document.head.appendChild(s); </script></div></div>
+<div style="height: 24px;"></div>
+<div style="text-align: center; margin-top: 0px; margin-bottom: 0px;">
+        <a href="#oferta"  onclick="event.preventDefault();event.stopImmediatePropagation();var id='oferta';setTimeout(function(){var t=document.getElementById(id);if(t)t.scrollIntoView({behavior:'smooth',block:'start'});},10);" style="background-color: #21c460; color: #ffffff; font-size: 18px; font-weight: 700; text-align: center; padding: 18px 48px; border-radius: 12px; animation: pulseBtn 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; display: inline-block; text-decoration: none; transition: transform 0.2s; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">COMPRAR AHORA POR MX$297.47</a>
+      </div>
+<p style="color: #21c460; font-size: 14px; font-weight: 600; text-align: center; padding: 16px 0 0; animation: fadeIn 0.6s ease-out forwards; animation-delay: 0.7000000000000001s; opacity: 0;">⭐⭐⭐⭐⭐ + DE 12 MIL JUGADORES ACTIVOS</p></div></div>
+        <div class="section" style="position: relative; background-color: #050505; padding-top: 40px; padding-bottom: 40px; padding-left: 20px; padding-right: 20px; margin-left: calc(-1 * 20px); margin-right: calc(-1 * 20px); width: calc(100% + 2 * 20px);"><div style="position: relative; z-index: 2;"><h2 style="color: #ffffff; font-size: 24px; font-weight: 700; text-align: center; padding: 0 0 24px; animation: fadeIn 0.6s ease-out forwards; animation-delay: 0.1s; opacity: 0;">Esta guía es para ti si:</h2>
+<div style="display: flex; justify-content: center; margin-top: 0px; margin-bottom: 0px;"><img src="https://pub-e1f5fdc45b674261b2ccda7b284afbb9.r2.dev/images/fe3df650-5daf-51fd-aa1e-4068b58768d1/1790217128_1fe001952880.jpg" alt="Imagem" style="width: 80%; height: auto; border-radius: 12px; object-fit: cover; animation: fadeIn 0.6s ease-out forwards; animation-delay: 0.2s; opacity: 0;" /></div>
+<p style="color: #ffffff; font-size: 16px; font-weight: 600; text-align: center; padding: 16px 0; animation: fadeIn 0.6s ease-out forwards; animation-delay: 0.30000000000000004s; opacity: 0;">No sabes cómo instalar y configurar todo correctamente</p>
+<div style="height: 24px;"></div>
+<div style="display: flex; justify-content: center; margin-top: 0px; margin-bottom: 0px;"><img src="https://pub-e1f5fdc45b674261b2ccda7b284afbb9.r2.dev/images/fe3df650-5daf-51fd-aa1e-4068b58768d1/1790217122_85e66281ca3a.jpg" alt="Imagem" style="width: 80%; height: auto; border-radius: 12px; object-fit: cover; animation: fadeIn 0.6s ease-out forwards; animation-delay: 0.5s; opacity: 0;" /></div>
+<p style="color: #ffffff; font-size: 16px; font-weight: 600; text-align: center; padding: 16px 0 0; animation: fadeIn 0.6s ease-out forwards; animation-delay: 0.6000000000000001s; opacity: 0;">El juego va lento, se traba o tiene problemas de rendimiento</p></div></div>
+        <div class="section" style="position: relative; background-color: #000000; padding-top: 40px; padding-bottom: 40px; padding-left: 20px; padding-right: 20px; margin-left: calc(-1 * 20px); margin-right: calc(-1 * 20px); width: calc(100% + 2 * 20px);"><div style="position: relative; z-index: 2;"><h2 style="color: #ffffff; font-size: 24px; font-weight: 700; text-align: center; padding: 0 0 24px; animation: fadeIn 0.6s ease-out forwards; animation-delay: 0.2s; opacity: 0;">Comentarios 🎯</h2>
+<div style="display: flex; justify-content: center;">
+        <div style="position: relative; overflow: hidden; width: 90%; max-width: 90%; border-radius: 12px; animation: fadeIn 0.6s ease-out forwards;">
+          <div id="carousel_kh4ox56sq" style="display: flex; transition: transform 0.5s ease-out;">
+            
+        <img src="https://pub-e1f5fdc45b674261b2ccda7b284afbb9.r2.dev/images/fe3df650-5daf-51fd-aa1e-4068b58768d1/1789938349_d9edd5043db7.png" alt="Slide 1" style="width: 100%; flex-shrink: 0; object-fit: cover; height: 400px; border-radius: 12px;" />
+      
+        <img src="https://pub-e1f5fdc45b674261b2ccda7b284afbb9.r2.dev/images/fe3df650-5daf-51fd-aa1e-4068b58768d1/1789938479_54fa629fa298.png" alt="Slide 2" style="width: 100%; flex-shrink: 0; object-fit: cover; height: 400px; border-radius: 12px;" />
+      
+        <img src="https://pub-e1f5fdc45b674261b2ccda7b284afbb9.r2.dev/images/fe3df650-5daf-51fd-aa1e-4068b58768d1/1789938573_5ba02bc14730.png" alt="Slide 3" style="width: 100%; flex-shrink: 0; object-fit: cover; height: 400px; border-radius: 12px;" />
+      
+          </div>
+          <button onclick="(function(){var c=document.getElementById('carousel_kh4ox56sq');var i=parseInt(c.dataset.index||0);var t=3;i=(i-1+t)%t;c.style.transform='translateX(-'+i*100+'%)';c.dataset.index=i;})();" style="position: absolute; left: 8px; top: 50%; transform: translateY(-50%); width: 32px; height: 32px; border-radius: 50%; background-color: rgba(0,0,0,0.5); color: white; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+          <button onclick="(function(){var c=document.getElementById('carousel_kh4ox56sq');var i=parseInt(c.dataset.index||0);var t=3;i=(i+1)%t;c.style.transform='translateX(-'+i*100+'%)';c.dataset.index=i;})();" style="position: absolute; right: 8px; top: 50%; transform: translateY(-50%); width: 32px; height: 32px; border-radius: 50%; background-color: rgba(0,0,0,0.5); color: white; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+          <div style="position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px;">
+            <span style="width: 8px; height: 8px; border-radius: 50%; background-color: rgba(255,255,255,0.5);"></span><span style="width: 8px; height: 8px; border-radius: 50%; background-color: rgba(255,255,255,0.5);"></span><span style="width: 8px; height: 8px; border-radius: 50%; background-color: rgba(255,255,255,0.5);"></span>
+          </div>
+          <script>(function(){var c=document.getElementById('carousel_kh4ox56sq');var i=0;var t=3;setInterval(function(){i=(i+1)%t;c.style.transform='translateX(-'+i*100+'%)';c.dataset.index=i;},4000);})();</script>
+        </div>
+      </div></div></div>
+        <div class="section" style="position: relative; background-color: #000000; padding-top: 40px; padding-bottom: 40px; padding-left: 20px; padding-right: 20px; margin-left: calc(-1 * 20px); margin-right: calc(-1 * 20px); width: calc(100% + 2 * 20px);"><div style="position: relative; z-index: 2;"><div id="oferta" style="height: 0; overflow: hidden;"></div>
+<div style="background-color: #071210; color: #ffffff; text-align: center; padding: 32px; border-radius: 16px; border-color: #21c460; border-width: 2px; border-style: solid; animation: scaleIn 0.5s ease-out forwards; animation-delay: 0.4s; opacity: 0; text-align: center; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); border: 2px solid #21c460; position: relative; overflow: hidden;">
+          
+          <div style="margin-bottom: 20px;"><img src="https://pub-e1f5fdc45b674261b2ccda7b284afbb9.r2.dev/images/fe3df650-5daf-51fd-aa1e-4068b58768d1/1789932041_f7d743cbe05d.png" alt="" style="width: 100%; max-width: 250px; height: auto; border-radius: 12px; margin: 0 auto; display: block;" /></div>
+          <h3 style="font-size: 24px; font-weight: 700; margin-bottom: 16px; color: #ffffff;"></h3>
+          <p style="font-size: 14px; opacity: 0.7; margin-bottom: 8px;">Pago único</p>
+          <p style="font-size: 20px; text-decoration: line-through; opacity: 0.5; margin-bottom: 4px;">MX$597,16</p>
+          <div style="margin-bottom: 24px;">
+            <span style="font-size: 48px; font-weight: 800; color: #00ff62; line-height: 1;">MX$297.47</span>
+          </div>
+          <div style="height: 1px; background-color: #21c460; margin: 0 -16px 24px;"></div>
+          <div style="text-align: left; margin-bottom: 24px;">
+            
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #21c460; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <span style="font-size: 15px; line-height: 1.5;">
+Juego GTA San Andreas Mobile completo</span>
+        </div>
+      
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #21c460; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <span style="font-size: 15px; line-height: 1.5;">Videotutorial de instalación</span>
+        </div>
+      
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #21c460; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <span style="font-size: 15px; line-height: 1.5;">Soporte humano para ayudarte</span>
+        </div>
+      
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #21c460; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <span style="font-size: 15px; line-height: 1.5;">Funciona sin conexión y sin anuncios.</span>
+        </div>
+      
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+          <div style="width: 20px; height: 20px; border-radius: 50%; background-color: #21c460; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <span style="font-size: 15px; line-height: 1.5;">Compatível com Android</span>
+        </div>
+      
+          </div>
+      <button type="button" data-href="https://pay.hotmart.com/Y107745392F?off=5dn0038f" onclick="event.preventDefault();event.stopImmediatePropagation();window.open(this.getAttribute('data-href'),'_blank');return false;" style="display: block; width: 100%; padding: 16px 24px; background-color: #21c460; color: #ffffff; font-size: 16px; font-weight: 600; text-align: center; border-radius: 12px; box-shadow: 0 4px 14px #21c46040; animation: scaleIn 0.5s ease-out forwards; border: none; cursor: pointer;">COMPRAR AHORA POR MX$297.47</button>
+        </div>
+<div style="height: 24px;"></div></div></div>
+        <div class="section" style="position: relative; background-color: #000000; padding-top: 40px; padding-bottom: 40px; padding-left: 20px; padding-right: 20px; margin-left: calc(-1 * 20px); margin-right: calc(-1 * 20px); width: calc(100% + 2 * 20px);"><div style="position: relative; z-index: 2;"><div style="background-color: #00140c; padding: 24px; border-radius: 12px; text-align: center; animation: fadeIn 0.6s ease-out forwards;">
+        <div style="margin: 0 auto 16px;"><img src="https://pub-e1f5fdc45b674261b2ccda7b284afbb9.r2.dev/images/fe3df650-5daf-51fd-aa1e-4068b58768d1/1789957870_ee40c50e8b42.png" alt="Garantia" style="width: 128px; height: 128px; object-fit: contain; margin: 0 auto; display: block;" /></div>
+        <h3 style="font-size: 24px; font-weight: 700; color: #ffffff; margin-bottom: 16px;">Garantía de 7 días</h3>
+        <p style="font-size: 14px; color: #ffffff; opacity: 0.8; margin-bottom: 20px; max-width: 400px; margin-left: auto; margin-right: auto; line-height: 1.6;">Si no queda satisfecho con el producto, le devolvemos el 100 % de su dinero en un plazo de 7 días.</p>
+        <div style="display: flex; justify-content: center; gap: 24px; flex-wrap: wrap;">
+          
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#21c460" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          <span style="font-size: 14px; color: #ffffff;">Reembolso completo</span>
+        </div>
+      
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#21c460" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          <span style="font-size: 14px; color: #ffffff;">Sin preguntas</span>
+        </div>
+      
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#21c460" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          <span style="font-size: 14px; color: #ffffff;">Soporte incluido</span>
+        </div>
+      
+        </div>
+      </div></div></div>
+        <div class="section" style="position: relative; background-color: #000000; padding-top: 40px; padding-bottom: 40px; padding-left: 20px; padding-right: 20px; margin-left: calc(-1 * 20px); margin-right: calc(-1 * 20px); width: calc(100% + 2 * 20px);"><div style="position: relative; z-index: 2;"><div style="background-color: #000000; padding: 24px; border-radius: 12px; animation: fadeIn 0.6s ease-out forwards;">
+        <h3 style="font-size: 24px; font-weight: 700; color: #ffffff; margin-bottom: 24px; text-align: center;">Perguntas Frequentes</h3>
+        
+        <div style="border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 0;">
+          <button onclick="(function(){var c=document.getElementById('faq_ycb2ebbj7_0');c.style.display=c.style.display==='none'?'block':'none';var i=document.getElementById('faq_ycb2ebbj7_icon_0');i.style.transform=c.style.display==='none'?'rotate(0deg)':'rotate(180deg)';})();" style="width: 100%; padding: 20px 0; background: none; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; text-align: left;">
+            <span style="font-size: 16px; font-weight: 500; color: #ffffff;">¿El juego es gratuito?</span>
+            <svg id="faq_ycb2ebbj7_icon_0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#21c460" stroke-width="2" style="transition: transform 0.3s; flex-shrink: 0;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div id="faq_ycb2ebbj7_0" style="display: none; padding: 0 0 20px 0;">
+            <p style="font-size: 14px; color: #ffffff; opacity: 0.8; line-height: 1.6; margin: 0;">No. GTA San Andreas Mobile es un producto digital de pago. El precio es de 14,90 € (pago único) e incluye el juego completo y asistencia guiada para la instalación. No es una descarga gratuita.</p>
+          </div>
+        </div>
+      
+        <div style="border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 0;">
+          <button onclick="(function(){var c=document.getElementById('faq_ycb2ebbj7_1');c.style.display=c.style.display==='none'?'block':'none';var i=document.getElementById('faq_ycb2ebbj7_icon_1');i.style.transform=c.style.display==='none'?'rotate(0deg)':'rotate(180deg)';})();" style="width: 100%; padding: 20px 0; background: none; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; text-align: left;">
+            <span style="font-size: 16px; font-weight: 500; color: #ffffff;">¿Funciona en mi celular?</span>
+            <svg id="faq_ycb2ebbj7_icon_1" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#21c460" stroke-width="2" style="transition: transform 0.3s; flex-shrink: 0;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div id="faq_ycb2ebbj7_1" style="display: none; padding: 0 0 20px 0;">
+            <p style="font-size: 14px; color: #ffffff; opacity: 0.8; line-height: 1.6; margin: 0;">¡Sí! El juego está optimizado para funcionar en la mayoría de los dispositivos Android, incluidos los teléfonos más sencillos y antiguos. Si tienes dudas, nuestro equipo de soporte te ayudará a verificarlo.</p>
+          </div>
+        </div>
+      
+        <div style="border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 0;">
+          <button onclick="(function(){var c=document.getElementById('faq_ycb2ebbj7_2');c.style.display=c.style.display==='none'?'block':'none';var i=document.getElementById('faq_ycb2ebbj7_icon_2');i.style.transform=c.style.display==='none'?'rotate(0deg)':'rotate(180deg)';})();" style="width: 100%; padding: 20px 0; background: none; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; text-align: left;">
+            <span style="font-size: 16px; font-weight: 500; color: #ffffff;">¿Podré instalarlo yo solo?</span>
+            <svg id="faq_ycb2ebbj7_icon_2" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#21c460" stroke-width="2" style="transition: transform 0.3s; flex-shrink: 0;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div id="faq_ycb2ebbj7_2" style="display: none; padding: 0 0 20px 0;">
+            <p style="font-size: 14px; color: #ffffff; opacity: 0.8; line-height: 1.6; margin: 0;">¡Por supuesto! Recibirás un tutorial en video paso a paso que muestra exactamente cómo realizar la instalación. Y si aun así tienes dificultades, nuestro equipo de soporte está listo para ayudarte personalmente.</p>
+          </div>
+        </div>
+      
+        <div style="border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 0;">
+          <button onclick="(function(){var c=document.getElementById('faq_ycb2ebbj7_3');c.style.display=c.style.display==='none'?'block':'none';var i=document.getElementById('faq_ycb2ebbj7_icon_3');i.style.transform=c.style.display==='none'?'rotate(0deg)':'rotate(180deg)';})();" style="width: 100%; padding: 20px 0; background: none; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; text-align: left;">
+            <span style="font-size: 16px; font-weight: 500; color: #ffffff;">¿Y si no sé usar el celular?</span>
+            <svg id="faq_ycb2ebbj7_icon_3" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#21c460" stroke-width="2" style="transition: transform 0.3s; flex-shrink: 0;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div id="faq_ycb2ebbj7_3" style="display: none; padding: 0 0 20px 0;">
+            <p style="font-size: 14px; color: #ffffff; opacity: 0.8; line-height: 1.6; margin: 0;">¡No hay problema! El soporte está precisamente para eso. Nuestro equipo te guía en cada etapa de la instalación hasta que estés jugando. No necesitas conocimientos técnicos.</p>
+          </div>
+        </div>
+      
+        <div style="border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 0;">
+          <button onclick="(function(){var c=document.getElementById('faq_ycb2ebbj7_4');c.style.display=c.style.display==='none'?'block':'none';var i=document.getElementById('faq_ycb2ebbj7_icon_4');i.style.transform=c.style.display==='none'?'rotate(0deg)':'rotate(180deg)';})();" style="width: 100%; padding: 20px 0; background: none; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; text-align: left;">
+            <span style="font-size: 16px; font-weight: 500; color: #ffffff;">¿Necesito internet para jugar?</span>
+            <svg id="faq_ycb2ebbj7_icon_4" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#21c460" stroke-width="2" style="transition: transform 0.3s; flex-shrink: 0;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div id="faq_ycb2ebbj7_4" style="display: none; padding: 0 0 20px 0;">
+            <p style="font-size: 14px; color: #ffffff; opacity: 0.8; line-height: 1.6; margin: 0;">¡No! Una vez descargado e instalado, el juego funciona 100 % sin conexión. Juega en cualquier lugar, sin necesidad de Wi-Fi ni datos móviles.</p>
+          </div>
+        </div>
+      
+        <div style="border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 0;">
+          <button onclick="(function(){var c=document.getElementById('faq_ycb2ebbj7_5');c.style.display=c.style.display==='none'?'block':'none';var i=document.getElementById('faq_ycb2ebbj7_icon_5');i.style.transform=c.style.display==='none'?'rotate(0deg)':'rotate(180deg)';})();" style="width: 100%; padding: 20px 0; background: none; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; text-align: left;">
+            <span style="font-size: 16px; font-weight: 500; color: #ffffff;">¿Es seguro el archivo? ¿Tiene virus?</span>
+            <svg id="faq_ycb2ebbj7_icon_5" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#21c460" stroke-width="2" style="transition: transform 0.3s; flex-shrink: 0;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div id="faq_ycb2ebbj7_5" style="display: none; padding: 0 0 20px 0;">
+            <p style="font-size: 14px; color: #ffffff; opacity: 0.8; line-height: 1.6; margin: 0;">El archivo es 100 % seguro, probado y verificado. Está libre de virus y malware. Puede descargarlo con total confianza.</p>
+          </div>
+        </div>
+      
+        <div style="border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 0;">
+          <button onclick="(function(){var c=document.getElementById('faq_ycb2ebbj7_6');c.style.display=c.style.display==='none'?'block':'none';var i=document.getElementById('faq_ycb2ebbj7_icon_6');i.style.transform=c.style.display==='none'?'rotate(0deg)':'rotate(180deg)';})();" style="width: 100%; padding: 20px 0; background: none; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; text-align: left;">
+            <span style="font-size: 16px; font-weight: 500; color: #ffffff;">¿Tiene garantía?</span>
+            <svg id="faq_ycb2ebbj7_icon_6" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#21c460" stroke-width="2" style="transition: transform 0.3s; flex-shrink: 0;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div id="faq_ycb2ebbj7_6" style="display: none; padding: 0 0 20px 0;">
+            <p style="font-size: 14px; color: #ffffff; opacity: 0.8; line-height: 1.6; margin: 0;">¡Sí! Tienes 7 días de garantía. Si no te gusta o no funciona en tu dispositivo, te devolvemos el 100% de tu dinero.</p>
+          </div>
+        </div>
+      
+      </div></div></div>
+        <div class="section" style="position: relative; background-color: #000000; padding-top: 40px; padding-bottom: 40px; padding-left: 20px; padding-right: 20px; margin-left: calc(-1 * 20px); margin-right: calc(-1 * 20px); width: calc(100% + 2 * 20px);"><div style="position: relative; z-index: 2;"><div style="display: flex; justify-content: center; margin-top: 0px; margin-bottom: 0px;"><img src="https://pub-e1f5fdc45b674261b2ccda7b284afbb9.r2.dev/images/fe3df650-5daf-51fd-aa1e-4068b58768d1/1789958736_80267065854a.png" alt="Imagem" style="width: 120px; height: auto; border-radius: 0px; object-fit: cover; animation: fadeIn 0.6s ease-out forwards; animation-delay: 0.6000000000000001s; opacity: 0;" /></div>
+<div style="height: 16px;"></div>
+<p style="color: #666666; font-size: 12px; font-weight: 400; text-align: center; padding: 0;">¡La piratería es un delito! El producto solo puede adquirirse a través de este sitio web. Cualquier otro sitio donde encuentre este producto ofrece una FALSIFICACIÓN y viola la ley. Evite las falsificaciones y rechace contenidos ilegales o pirateados. NO adquiera programas similares que no se basen en años de estudio de la psicología conductual. No nos hacemos responsables de las compras realizadas en otros sitios.</p></div></div>
+        </div>
+    </div>
+    
+    
+    
+  <script>
+    (function() {
+      try {
+        var STORAGE_KEY = '_lowify_utm_params';
+        var trackingKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 
+                           'utm_id', 'fbclid', 'gclid', 'ref', 'src', 'sck', 'xcod', 'ttclid', 'li_fat_id'];
+        
+        // Function to get stored UTMs from localStorage
+        function getStoredUtms() {
+          try {
+            var stored = localStorage.getItem(STORAGE_KEY);
+            return stored ? JSON.parse(stored) : {};
+          } catch(e) { return {}; }
+        }
+        
+        // Function to save UTMs to localStorage
+        function saveUtms(params) {
+          try {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(params));
+          } catch(e) {}
+        }
+        
+        // Capture UTMs from the real page URL.
+        // IMPORTANT: published pages are rendered inside an iframe via srcDoc,
+        // so window.location.search inside the iframe is usually empty.
+        // We must fallback to the top/parent URL (same-origin) or referrer.
+        function getEffectiveSearch() {
+          try {
+            var s = (window.location && window.location.search) ? window.location.search : '';
+            if (s) return s;
+          } catch(e) {}
+
+          // Try top (best) then parent
+          try {
+            if (window.top && window.top !== window && window.top.location) {
+              var ts = window.top.location.search || '';
+              if (ts) return ts;
+            }
+          } catch(e) {}
+
+          try {
+            if (window.parent && window.parent !== window && window.parent.location) {
+              var ps = window.parent.location.search || '';
+              if (ps) return ps;
+            }
+          } catch(e) {}
+
+          // Last resort: parse referrer
+          try {
+            if (document.referrer) {
+              var refUrl = new URL(document.referrer);
+              return refUrl.search || '';
+            }
+          } catch(e) {}
+
+          return '';
+        }
+
+        var currentParams = getEffectiveSearch();
+        var urlParams = new URLSearchParams(currentParams || '');
+        var newUtmParams = {};
+        
+        urlParams.forEach(function(value, key) {
+          // Only capture if value is not empty
+          if (value && value.trim() !== '') {
+            var lowerKey = key.toLowerCase();
+            if (key.startsWith('utm_') || trackingKeys.includes(lowerKey)) {
+              newUtmParams[key] = value;
+            }
+          }
+        });
+        
+        // Merge with stored UTMs (new params override old ones)
+        var storedUtms = getStoredUtms();
+        var utmParams = {};
+        
+        // First add stored params (only non-empty)
+        for (var k in storedUtms) {
+          if (storedUtms[k] && storedUtms[k].trim() !== '') {
+            utmParams[k] = storedUtms[k];
+          }
+        }
+        
+        // Then override with new params from URL (only non-empty)
+        for (var k in newUtmParams) {
+          if (newUtmParams[k] && newUtmParams[k].trim() !== '') {
+            utmParams[k] = newUtmParams[k];
+          }
+        }
+        
+        // Save merged params back to localStorage
+        if (Object.keys(utmParams).length > 0) {
+          saveUtms(utmParams);
+        }
+        
+        // If no tracking params found, exit
+        if (Object.keys(utmParams).length === 0) return;
+        
+        // Function to append params to a URL (FORCE override existing params)
+        function appendParamsToUrl(url) {
+          if (!url || url === '#' || url.startsWith('javascript:')) return url;
+          
+          try {
+            var urlObj = new URL(url, window.location.origin);
+            
+            // FORCE override - always set our UTMs, replacing any existing values
+            // This ensures our tracked UTMs override "organic" or empty values
+            for (var key in utmParams) {
+              var val = utmParams[key];
+              if (val && val.trim() !== '') {
+                // Always override - remove existing and set new
+                urlObj.searchParams.delete(key);
+                urlObj.searchParams.set(key, val);
+              }
+            }
+            
+            // Also remove any empty UTM params that might be in the URL
+            var keysToCheck = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+            keysToCheck.forEach(function(k) {
+              var existing = urlObj.searchParams.get(k);
+              // Remove if empty, "organic" (default), or not in our tracked params
+              if (existing !== null && (existing === '' || existing === 'organic') && !utmParams[k]) {
+                urlObj.searchParams.delete(k);
+              }
+            });
+            
+            return urlObj.toString();
+          } catch(e) {
+            // If URL parsing fails, we need to handle manually
+            // First, try to remove existing UTM params from the URL
+            var cleanUrl = url;
+            var trackingToReplace = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'utm_id'];
+            trackingToReplace.forEach(function(param) {
+              // Remove param=value& or &param=value or ?param=value
+              cleanUrl = cleanUrl.replace(new RegExp('[?&]' + param + '=[^&]*', 'gi'), '');
+            });
+            // Clean up any double && or trailing ?
+            cleanUrl = cleanUrl.replace(/&&/g, '&').replace(/?&/g, '?').replace(/?$/g, '').replace(/&$/g, '');
+            
+            // Now append our params
+            var paramsToAdd = [];
+            for (var k in utmParams) {
+              var v = utmParams[k];
+              if (v && v.trim() !== '') {
+                paramsToAdd.push(encodeURIComponent(k) + '=' + encodeURIComponent(v));
+              }
+            }
+            if (paramsToAdd.length === 0) return cleanUrl || url;
+            var separator = cleanUrl.includes('?') ? '&' : '?';
+            return cleanUrl + separator + paramsToAdd.join('&');
+          }
+        }
+        
+        // Process all links on page load
+        function processLinks() {
+          var links = document.querySelectorAll('a[href]');
+          links.forEach(function(link) {
+            var href = link.getAttribute('href');
+            if (href && href !== '#' && !href.startsWith('javascript:') && !href.startsWith('#')) {
+              link.setAttribute('href', appendParamsToUrl(href));
+            }
+          });
+        }
+        
+        // Run on DOMContentLoaded
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', processLinks);
+        } else {
+          processLinks();
+        }
+        
+        // Also observe for dynamically added links (popups, etc)
+        var observer = new MutationObserver(function(mutations) {
+          mutations.forEach(function(mutation) {
+            mutation.addedNodes.forEach(function(node) {
+              if (node.nodeType === 1) {
+                if (node.tagName === 'A' && node.hasAttribute('href')) {
+                  var href = node.getAttribute('href');
+                  if (href && href !== '#' && !href.startsWith('javascript:') && !href.startsWith('#')) {
+                    node.setAttribute('href', appendParamsToUrl(href));
+                  }
+                }
+                // Check child links
+                var childLinks = node.querySelectorAll ? node.querySelectorAll('a[href]') : [];
+                childLinks.forEach(function(link) {
+                  var href = link.getAttribute('href');
+                  if (href && href !== '#' && !href.startsWith('javascript:') && !href.startsWith('#')) {
+                    link.setAttribute('href', appendParamsToUrl(href));
+                  }
+                });
+              }
+            });
+          });
+        });
+        
+        observer.observe(document.body || document.documentElement, { 
+          childList: true, 
+          subtree: true 
+        });
+        
+        // ===== NAVIGATION INTERCEPTORS (window.open / location / inline onclick / forms) =====
+        // Goal: pass UTMs even when navigation is triggered by JS (buttons, custom HTML, etc.)
+
+        // Intercept window.open (works in most browsers)
+        try {
+          var originalWindowOpen = window.open;
+          if (originalWindowOpen) {
+            window.open = function(url, target, features) {
+              if (url && typeof url === 'string') {
+                url = appendParamsToUrl(url);
+              }
+              return originalWindowOpen.call(window, url, target, features);
+            };
+          }
+        } catch(e) {}
+
+        // Intercept Location.assign/replace at the prototype level (more compatible than overwriting instance methods)
+        try {
+          var locProto = Object.getPrototypeOf(window.location);
+          if (locProto) {
+            if (typeof locProto.assign === 'function') {
+              var originalAssign = locProto.assign;
+              locProto.assign = function(url) {
+                if (url && typeof url === 'string') {
+                  url = appendParamsToUrl(url);
+                }
+                return originalAssign.call(this, url);
+              };
+            }
+            if (typeof locProto.replace === 'function') {
+              var originalReplace = locProto.replace;
+              locProto.replace = function(url) {
+                if (url && typeof url === 'string') {
+                  url = appendParamsToUrl(url);
+                }
+                return originalReplace.call(this, url);
+              };
+            }
+          }
+        } catch(e) {}
+
+        // Best-effort intercept for location.href setter (some browsers forbid redefining)
+        try {
+          var proto = Object.getPrototypeOf(window.location);
+          var hrefDescriptor = proto ? Object.getOwnPropertyDescriptor(proto, 'href') : null;
+          if (!hrefDescriptor) {
+            hrefDescriptor = Object.getOwnPropertyDescriptor(Location.prototype, 'href');
+          }
+          if (hrefDescriptor && hrefDescriptor.set) {
+            var originalHrefSetter = hrefDescriptor.set;
+            Object.defineProperty(hrefDescriptor === (proto && Object.getOwnPropertyDescriptor(proto, 'href')) ? proto : Location.prototype, 'href', {
+              get: hrefDescriptor.get,
+              set: function(url) {
+                if (url && typeof url === 'string') {
+                  url = appendParamsToUrl(url);
+                }
+                return originalHrefSetter.call(this, url);
+              },
+              configurable: true
+            });
+          }
+        } catch(e) {}
+
+        function patchInlineOnclick(el) {
+          try {
+            if (!el || !el.getAttribute) return;
+            var onclick = el.getAttribute('onclick');
+            if (!onclick) return;
+
+            // Replace any hardcoded URLs inside onclick="..." with UTM-appended versions.
+            // Works for both single and double quotes inside the attribute.
+            // NOTE: do not include the backtick char in this regex because this script is embedded in a JS template literal.
+            var replaced = onclick.replace(/(https?://[^s'"<>]+)(?![^s]*))/g, function(u) {
+              return appendParamsToUrl(u);
+            });
+
+            if (replaced !== onclick) {
+              el.setAttribute('onclick', replaced);
+            }
+          } catch(e) {}
+        }
+
+        function patchFormAction(form) {
+          try {
+            if (!form) return;
+            var action = form.getAttribute('action');
+            if (action) form.setAttribute('action', appendParamsToUrl(action));
+
+            // Also handle <button formaction="...">
+            var btns = form.querySelectorAll ? form.querySelectorAll('[formaction]') : [];
+            btns.forEach(function(b) {
+              var fa = b.getAttribute('formaction');
+              if (fa) b.setAttribute('formaction', appendParamsToUrl(fa));
+            });
+          } catch(e) {}
+        }
+
+        // Capture-phase click patching (runs before inline onclick and most listeners)
+        document.addEventListener('click', function(e) {
+          try {
+            var node = e.target;
+            while (node && node !== document.body) {
+              // Anchor: patch right before navigation
+              if (node.tagName === 'A' && node.getAttribute) {
+                var href = node.getAttribute('href');
+                if (href && href !== '#' && !href.startsWith('javascript:') && !href.startsWith('#')) {
+                  node.setAttribute('href', appendParamsToUrl(href));
+                }
+                patchInlineOnclick(node);
+                break;
+              }
+
+              // Buttons / custom clickable elements
+              if (node.getAttribute) {
+                // data-href style navigation
+                var dataHref = node.getAttribute('data-href') || node.getAttribute('data-url') || node.getAttribute('data-link');
+                if (dataHref) {
+                  var patched = appendParamsToUrl(dataHref);
+                  node.setAttribute('data-href', patched);
+                  node.setAttribute('data-url', patched);
+                  node.setAttribute('data-link', patched);
+                }
+
+                // inline onclick with hardcoded URL
+                patchInlineOnclick(node);
+
+                // if inside a form, patch form action too
+                var form = node.closest ? node.closest('form') : null;
+                if (form) patchFormAction(form);
+              }
+
+              node = node.parentElement;
+            }
+          } catch(err) {}
+        }, true);
+
+        // Patch on submit too (covers Enter-to-submit, programmatic submits, etc)
+        document.addEventListener('submit', function(e) {
+          try { patchFormAction(e.target); } catch(err) {}
+        }, true);
+        
+      } catch(e) { console.warn('UTM passthrough error:', e); }
+    })();
+  </script>
+      <script>
+        (function() {
+          try {
+            var timeLeft = 10 * 60;
+            
+            function formatTime(seconds) {
+              var mins = Math.floor(seconds / 60);
+              var secs = seconds % 60;
+              return (mins < 10 ? '0' : '') + mins + ':' + (secs < 10 ? '0' : '') + secs;
+            }
+            
+            function updateTimer() {
+              var timerEl = document.getElementById('urgency-timer');
+              if (timerEl && timeLeft > 0) {
+                timerEl.textContent = formatTime(timeLeft);
+                timeLeft--;
+              }
+            }
+            
+            setInterval(updateTimer, 1000);
+            updateTimer();
+          } catch(e) { console.warn('Urgency timer error:', e); }
+        })();
+      </script>
+    <script>
+      (function() {
+        try {
+          var names = ["Lucas","Pedro","João","Gabriel","Rafael","Bruno","Carlos","Matheus","Felipe","Gustavo","Ricardo","André","Marcelo","Thiago","Leonardo"];
+          var productName = "GTA San Andreas";
+          var interval = 12 * 1000;
+          
+          function getRandomName() {
+            return names[Math.floor(Math.random() * names.length)];
+          }
+          
+          function showNotification() {
+            try {
+              var existing = document.getElementById('fake-purchase-notification');
+              if (existing) existing.remove();
+              
+              var notification = document.createElement('div');
+              notification.id = 'fake-purchase-notification';
+              notification.innerHTML = '<div style="width:40px;height:40px;border-radius:50%;background-color:rgba(255,255,255,0.2);display:flex;align-items:center;justify-content:center;font-size:18px;">✓</div><div><div style="font-weight:600;font-size:14px;">' + getRandomName() + ' acabou de comprar</div><div style="font-size:12px;opacity:0.8;">' + productName + '</div></div>';
+              notification.style.cssText = 'position:fixed;bottom:20px;left:20px;background-color:#21c460;color:#ffffff;padding:12px 20px;border-radius:8px;box-shadow:0 4px 20px rgba(0,0,0,0.3);z-index:9998;display:flex;align-items:center;gap:12px;animation:slideInLeft 0.4s ease-out;max-width:300px;';
+              document.body.appendChild(notification);
+              
+              setTimeout(function() {
+                if (notification.parentNode) notification.remove();
+              }, 4000);
+            } catch(e) { console.warn('Fake notification render error:', e); }
+          }
+          
+          setTimeout(showNotification, 3000);
+          setInterval(showNotification, interval);
+        } catch(e) { console.warn('Fake purchase script error:', e); }
+      })();
+    </script>
+    <style>
+      @keyframes slideInLeft {
+        from { transform: translateX(-100%); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+      }
+    </style>
+    
+        <div id="offer_oxm7a7yre-popup" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.85); z-index: 2147483647; align-items: center; justify-content: center; padding: 12px; overflow-y: auto; overscroll-behavior: contain;" onclick="if(event.target===this){ document.getElementById('offer_oxm7a7yre-popup').style.display='none'; document.documentElement.style.overflow=''; document.body.style.overflow=''; }">
+          <div style="background: #1a1a2e; border-radius: 16px; padding: 20px; max-width: 360px; width: 100%; position: relative; border: 2px solid #21c460; box-shadow: 0 0 40px #21c46040; margin: auto;">
+            <button onclick="document.getElementById('offer_oxm7a7yre-popup').style.display='none'; document.documentElement.style.overflow=''; document.body.style.overflow='';" style="position: absolute; top: 12px; right: 12px; background: none; border: none; color: #888; cursor: pointer; font-size: 20px; line-height: 1;">&times;</button>
+            <div style="text-align: center;">
+              <span style="display: inline-block; background-color: #21c460; color: #1a1a2e; padding: 6px 14px; border-radius: 16px; font-size: 11px; font-weight: 700; text-transform: uppercase; margin-bottom: 12px;"></span>
+              <h3 style="font-size: 22px; font-weight: 700; color: #ffffff; margin-bottom: 8px;"></h3>
+              <div style="margin-bottom: 4px;">
+                <span style="font-size: 36px; font-weight: 800; color: #21c460; line-height: 1;"></span>
+              </div>
+              <p style="font-size: 13px; color: #ffffff; margin-bottom: 16px;"></p>
+              <div style="background-color: rgba(255,255,255,0.05); border-radius: 10px; padding: 14px; margin-bottom: 16px; text-align: left;">
+                <p style="font-size: 10px; font-weight: 600; text-transform: uppercase; color: #21c460; margin-bottom: 10px;">INCLUI:</p>
+                
+              </div>
+               <button type="button" data-href="" onclick="event.stopImmediatePropagation();window.open('','_blank');" style="display: block; width: 100%; padding: 12px 16px; background-color: #21c460; color: #1a1a2e; font-size: 14px; font-weight: 700; text-align: center; border-radius: 10px; text-decoration: none; text-transform: uppercase; margin-bottom: 8px; border: none; cursor: pointer;"></button>
+               <button type="button" data-href="" onclick="event.stopImmediatePropagation();window.open('','_blank');" style="display: block; width: 100%; padding: 10px 16px; background-color: transparent; color: #888; font-size: 12px; font-weight: 500; text-align: center; border-radius: 10px; text-decoration: none; border: 1px solid #444; cursor: pointer;"></button>
+            </div>
+          </div>
+        </div>
+</body>
+</html>
